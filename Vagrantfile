@@ -29,6 +29,7 @@ Vagrant.configure("2") do |config|
     apt install nodejs -y
     mkdir nodeapp
     cd /nodeapp
+    sudo npm install -g nodemon
     nodemon app.js
 
   SHELL
