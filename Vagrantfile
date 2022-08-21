@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt install nodejs -y
+    apt install nodejs npm -y
     mkdir nodeapp
     cd /nodeapp
     sudo npm install -g nodemon
